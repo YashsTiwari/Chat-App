@@ -50,7 +50,7 @@ export const getUserPosts = async (req, res) => {
 };
 
 /* UPDATE */
-const likePost = async (req, res) => {
+export const likePost = async (req, res) => {
   try {
     const { id } = req.params; //id of post
     const { userId } = req.body;
